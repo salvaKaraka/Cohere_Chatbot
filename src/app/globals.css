@@ -17,6 +17,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(24, 25, 28);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #003f91;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #222222;
+
+}
 a{
   color: #58a6ff;
 }

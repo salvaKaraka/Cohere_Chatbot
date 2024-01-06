@@ -5,8 +5,8 @@ import Footer from '@/components/Footer';
 
 
 export const metadata: Metadata = {
-  title: 'Salvador Karakachoff - Ingeniería en computación y data science',
-  description: 'Contrata a Salvador Karakachoff porque es un desarrollador web con más de 5 años de experiencia. Además, ofrece soporte en IT. Salvador es un estudiante avanzado en Ingeniería en Computación y Data Science, lo que demuestra su compromiso con el aprendizaje continuo y su capacidad para adaptarse a las nuevas tecnologías. Su experiencia y habilidades le permiten crear soluciones web de alta calidad y brindar un excelente soporte técnico.',
+  title: 'Chatbot by Salvador Karakachoff',
+  description: "A chat-bot trained with personal data. It's thought to be implemented in my personal portfolio. Here is a little demo so you can play around. :D",
 }
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <Header/>
         {children}
-        <section className='mt-20'>
+        <section className=''>
           <Footer />
         </section>
       </body>

@@ -17,7 +17,7 @@ const ANSWERS = {
 export default function Home() {
 
   return (
-        <main className="p-4">
+        <main className="p-4 my-10">
           <Chatbot initialMessage={INITIAL_MESSAGE} answers={ANSWERS}/>
         </main>
   );

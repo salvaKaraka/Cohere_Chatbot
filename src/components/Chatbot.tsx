@@ -73,12 +73,12 @@ function Chatbot({ initialMessage, answers }: Props) {
 
   // Renderiza el componente
   return(
-      <div className="flex flex-col gap-4 max-w-xl m-auto border rounded-md p-6 bg-gray-800/80 border-gray-700 text-white/90">
+      <div className="flex flex-col gap-4 max-w-xl m-auto border rounded-md p-6 pr-1 bg-gray-800/80 border-gray-700 text-white/90">
         <div ref={container} className="flex flex-col gap-4 h-[300px] overflow-y-auto">
           {messages.map(({ id, text, type }) => (
             <div
               key={id}
-              className={`rounded-xl p-2 max-w-[80%] ${type === "bot"
+              className={`rounded-xl p-2 mr-5 max-w-[80%] ${type === "bot"
                   ? "bg-slate-600 rounded-bl-none text-left self-start"
                   : "bg-blue-600 rounded-br-none text-right self-end"
                 }`}
@@ -88,7 +88,7 @@ function Chatbot({ initialMessage, answers }: Props) {
           ))}
         </div>
         <form
-          className="flex flex-row items-center mt-4"
+          className="flex flex-row items-center mt-4 mr-5"
           onSubmit={handleSubmit}
         >
           <input
