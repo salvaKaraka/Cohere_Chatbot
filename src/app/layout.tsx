@@ -16,12 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className="min-h-screen flex flex-col">
+      <body className="overflow-x-hidden flex flex-col min-h-screen">
         <Header/>
-        {children}
-        <section className=''>
-          <Footer />
-        </section>
+        <section className="flex-1">{children}</section>
+        <Footer />
       </body>
     </html>
   )
